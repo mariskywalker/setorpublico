@@ -439,7 +439,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="setor-grid" style={{ marginTop: "2.25rem" }}>
+          <div className="setor-grid setor-grid-execucao" style={{ marginTop: "2.25rem" }}>
             {[
               "Entrada sem fricção financeira inicial",
               "Validação em ambiente real",
