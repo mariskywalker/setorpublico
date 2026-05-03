@@ -21,16 +21,22 @@ export default function Home() {
             <a href="#solucao">Infraestrutura</a>
           </li>
           <li>
-            <a href="#execucao">Execução</a>
+            <a href="#implementacao-publico">Na prática</a>
+          </li>
+          <li>
+            <a href="#modelo-parceria">Contratar</a>
+          </li>
+          <li>
+            <a href="#piloto-proposto">Piloto</a>
+          </li>
+          <li>
+            <a href="#indicadores-sucesso">Medição</a>
+          </li>
+          <li>
+            <a href="#escalabilidade">Escala</a>
           </li>
           <li>
             <a href="#parlamentares">Gabinetes</a>
-          </li>
-          <li>
-            <a href="#modelo">Modelo</a>
-          </li>
-          <li>
-            <a href="#ppp">PPP</a>
           </li>
           <li>
             <a href="#legislacao">Leis</a>
@@ -39,7 +45,10 @@ export default function Home() {
             <a href="#roi-publico">Impacto fiscal</a>
           </li>
           <li>
-            <a href="#piloto-publico">Piloto</a>
+            <a href="#cuidado">Rede</a>
+          </li>
+          <li>
+            <a href="#governanca">LGPD</a>
           </li>
         </ul>
 
@@ -457,33 +466,288 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="execucao" className="section-setor">
+      <section id="implementacao-publico" className="section-setor">
         <div className="wrap">
-          <div className="reveal">
-            <p className="eyebrow">Execução institucional</p>
-            <h2 className="section-headline">Pronto para implementação imediata</h2>
-            <p className="section-body" style={{ marginTop: "1rem" }}>
-              O programa pode ser iniciado por meio de termo de cooperação técnica com municípios, permitindo implantação
-              sem contratação inicial.
+          <div className="reveal" style={{ maxWidth: "48rem" }}>
+            <p className="eyebrow">Implementação no setor público</p>
+            <h2 className="section-headline">Como o CADU roda na prática</h2>
+
+            <div style={{ marginTop: "1.75rem" }}>
+              <p style={{ margin: "0 0 0.35rem", fontWeight: 800, color: "var(--black)" }}>Quem usa?</p>
+              <p className="section-body" style={{ marginTop: 0, marginBottom: "1.35rem", maxWidth: "none" }}>
+                Profissionais de saúde, educação e assistência social cadastrados pela gestão local. Cada perfil acessa
+                apenas o que é pertinente à sua função e ao consentimento do responsável.
+              </p>
+
+              <p style={{ margin: "0 0 0.35rem", fontWeight: 800, color: "var(--black)" }}>Onde é implementado?</p>
+              <p className="section-body" style={{ marginTop: 0, marginBottom: "1.35rem", maxWidth: "none" }}>
+                UBS, CAPS, CER, escolas com AEE e CRAS. A entrada pode começar por um único equipamento e expandir
+                progressivamente.
+              </p>
+
+              <p style={{ margin: "0 0 0.35rem", fontWeight: 800, color: "var(--black)" }}>Quanto tempo para implementar?</p>
+              <p className="section-body" style={{ marginTop: 0, marginBottom: "1.35rem", maxWidth: "none" }}>
+                30 dias para onboarding da equipe e início de uso. 90 dias para primeiros indicadores estruturados. Sem
+                necessidade de infraestrutura própria — funciona via navegador, com acesso por dispositivo existente.
+              </p>
+
+              <p style={{ margin: "0 0 0.35rem", fontWeight: 800, color: "var(--black)" }}>Precisa de treinamento?</p>
+              <p className="section-body" style={{ marginTop: 0, marginBottom: "1.35rem", maxWidth: "none" }}>
+                Sim. Capacitação inicial de 4h para equipes operacionais, com material de apoio e suporte técnico durante
+                o piloto. Não exige conhecimento técnico avançado.
+              </p>
+
+              <p style={{ margin: "0 0 0.35rem", fontWeight: 800, color: "var(--black)" }}>Quem paga?</p>
+              <p className="section-body" style={{ marginTop: 0, marginBottom: "1.35rem", maxWidth: "none" }}>
+                O piloto pode ser viabilizado via emenda parlamentar, recurso de fundo municipal de saúde ou convênio
+                federal. O CADU não exige contratação prévia — a entrada se dá por cooperação técnica.
+              </p>
+
+              <p style={{ margin: "0 0 0.35rem", fontWeight: 800, color: "var(--black)" }}>Quem mantém?</p>
+              <p className="section-body" style={{ marginTop: 0, marginBottom: 0, maxWidth: "none" }}>
+                A operação técnica da plataforma é responsabilidade do CADU. O município responde pela governança local,
+                consentimento e adesão da rede.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="modelo-parceria" className="section-ppp">
+        <div className="blobs" aria-hidden="true">
+          <div className="blob ppp-blob" />
+        </div>
+        <div className="wrap">
+          <div className="reveal" style={{ maxWidth: "52rem" }}>
+            <p className="eyebrow">Modelo de parceria pública</p>
+            <h2 className="section-headline">Como contratar o CADU</h2>
+            <p className="section-body" style={{ marginTop: "1rem", maxWidth: "none" }}>
+              O CADU não exige licitação para entrada. O modelo de início é via cooperação técnica — instrumento jurídico
+              simples, sem transferência financeira inicial, que permite validação antes de qualquer contratação.
             </p>
-            <p className="section-body" style={{ marginTop: "1rem" }}>
-              A execução ocorre sobre a rede existente, com integração progressiva e geração de dados estruturados para
-              decisão pública.
+            <p className="section-body" style={{ marginTop: "1rem", maxWidth: "none", fontWeight: 700, color: "var(--black)" }}>
+              Etapas do modelo:
             </p>
           </div>
 
-          <div className="setor-grid setor-grid-execucao" style={{ marginTop: "2.25rem" }}>
-            {[
-              "Entrada sem fricção financeira inicial",
-              "Validação em ambiente real",
-              "Geração de evidência para escala",
-              "Preparação para financiamento e expansão",
-            ].map((t, i) => (
-              <div key={t} className={`setor-card reveal${i > 0 ? ` d${Math.min(i, 4)}` : ""}`}>
-                {t}
-              </div>
-            ))}
+          <div className="modelo-grid" style={{ marginTop: "2rem" }}>
+            <div className="modelo-card reveal">
+              <div className="modelo-title">Fase 1 — Cooperação técnica (sem custo)</div>
+              <ul className="modelo-list">
+                <li>
+                  <strong>Instrumento:</strong> Termo de Cooperação Técnica
+                </li>
+                <li>
+                  <strong>Duração:</strong> até 120 dias
+                </li>
+                <li>
+                  <strong>Escopo:</strong> piloto em rede selecionada, com equipe capacitada e dados estruturados
+                </li>
+                <li>
+                  <strong>Entregável:</strong> relatório técnico com indicadores reais
+                </li>
+              </ul>
+            </div>
+            <div className="modelo-card reveal d1">
+              <div className="modelo-title">Fase 2 — Contratação baseada em resultado</div>
+              <ul className="modelo-list">
+                <li>
+                  <strong>Instrumento:</strong> contrato de prestação de serviços ou convênio
+                </li>
+                <li>
+                  <strong>Financiamento:</strong> emenda parlamentar, fundo municipal de saúde, recurso federal (SUAS,
+                  SUS, FNDE)
+                </li>
+                <li>
+                  <strong>Modelo:</strong> SaaS público com valor por criança acompanhada
+                </li>
+              </ul>
+            </div>
+            <div className="modelo-card reveal d2">
+              <div className="modelo-title">Fase 3 — Expansão e PPP</div>
+              <ul className="modelo-list">
+                <li>
+                  Para municípios com carteira acima de 500 crianças, estruturação de Parceria Público-Privada para escala
+                  regional
+                </li>
+              </ul>
+            </div>
           </div>
+
+          <div className="piloto-ppp-grid" style={{ marginTop: "2.5rem", alignItems: "start" }}>
+            <div className="reveal">
+              <p className="eyebrow" style={{ marginBottom: "0.75rem" }}>
+                Papel do município
+              </p>
+              <ul className="urgencia-list">
+                <li>Indicar território e equipamentos do piloto</li>
+                <li>Autorizar acesso às equipes locais</li>
+                <li>Assinar o Termo de Cooperação Técnica</li>
+                <li>Garantir adesão mínima da rede local</li>
+              </ul>
+            </div>
+            <div className="reveal d1">
+              <p className="eyebrow" style={{ marginBottom: "0.75rem" }}>
+                Papel do CADU
+              </p>
+              <ul className="urgencia-list">
+                <li>Infraestrutura técnica e manutenção</li>
+                <li>Capacitação das equipes</li>
+                <li>Suporte durante o piloto</li>
+                <li>Relatório técnico de impacto</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="piloto-proposto" className="section-piloto-ppp">
+        <div className="blobs" aria-hidden="true">
+          <div className="blob piloto-blob" />
+        </div>
+        <div className="wrap">
+          <div className="reveal" style={{ maxWidth: "48rem" }}>
+            <p className="eyebrow">Piloto proposto</p>
+            <h2 className="section-headline">O que estamos propondo — agora</h2>
+            <p className="section-body" style={{ marginTop: "1rem", maxWidth: "none", fontWeight: 700, color: "var(--black)" }}>
+              Escopo fechado para piloto inicial:
+            </p>
+            <ul className="urgencia-list" style={{ marginTop: "0.65rem" }}>
+              <li>
+                <strong>Duração:</strong> 6 meses
+              </li>
+              <li>
+                <strong>Local sugerido:</strong> 1 UBS + 1 escola com AEE + 1 CAPS ou CER
+              </li>
+              <li>
+                <strong>Público:</strong> 80 a 120 crianças com suspeita ou diagnóstico de TEA/TDAH
+              </li>
+              <li>
+                <strong>Equipe envolvida:</strong> profissionais já atuantes na rede, sem contratação adicional
+              </li>
+              <li>
+                <strong>Instrumento:</strong> Termo de Cooperação Técnica com o município
+              </li>
+            </ul>
+            <p className="section-body" style={{ marginTop: "1.35rem", maxWidth: "none", fontWeight: 700, color: "var(--black)" }}>
+              Entregáveis ao final do piloto:
+            </p>
+            <ul className="urgencia-list" style={{ marginTop: "0.65rem" }}>
+              <li>Relatório técnico com indicadores de impacto</li>
+              <li>Mapeamento da jornada real das crianças na rede</li>
+              <li>Dados de evolução por criança (anonimizados para gestão)</li>
+              <li>Subsídios para decisão de escala ou política pública permanente</li>
+              <li>Material para prestação de contas de emenda parlamentar</li>
+            </ul>
+            <p className="section-body" style={{ marginTop: "1.35rem", maxWidth: "none", fontWeight: 700, color: "var(--black)" }}>
+              Cronograma:
+            </p>
+            <ul className="urgencia-list" style={{ marginTop: "0.65rem" }}>
+              <li>
+                <strong>Mês 1:</strong> assinatura do termo, onboarding, capacitação
+              </li>
+              <li>
+                <strong>Mês 2–5:</strong> operação com acompanhamento semanal
+              </li>
+              <li>
+                <strong>Mês 6:</strong> consolidação de dados e entrega do relatório
+              </li>
+            </ul>
+            <p className="section-body" style={{ marginTop: "1.25rem", maxWidth: "none", marginBottom: 0 }}>
+              Resultado esperado antes de outubro de 2026 para pilotos iniciados até maio.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="indicadores-sucesso" className="section-dados">
+        <div className="wrap">
+          <div className="dados-head reveal">
+            <p className="eyebrow">Indicadores de sucesso</p>
+            <h2 className="section-headline">O que vamos medir</h2>
+          </div>
+
+          <div className="dados-grid">
+            <div className="dados-card reveal">
+              <h3 className="dados-card-title">Tempo médio até primeiro atendimento especializado</h3>
+              <p className="dados-card-body">
+                <strong>Baseline:</strong> 18 meses (média SUS)
+                <br />
+                <strong>Esperado:</strong> redução ≥ 30% no território piloto
+              </p>
+            </div>
+            <div className="dados-card reveal d1">
+              <h3 className="dados-card-title">Duplicidade de atendimentos e retrabalho entre serviços</h3>
+              <p className="dados-card-body">
+                <strong>Baseline:</strong> sem dados estruturados
+                <br />
+                <strong>Esperado:</strong> redução identificável em 90 dias
+              </p>
+            </div>
+            <div className="dados-card reveal d2">
+              <h3 className="dados-card-title">Adesão terapêutica (sessões realizadas vs. prescritas)</h3>
+              <p className="dados-card-body">
+                <strong>Baseline:</strong> não mensurável
+                <br />
+                <strong>Esperado:</strong> taxa de adesão acima de 70% na rede
+              </p>
+            </div>
+            <div className="dados-card reveal">
+              <h3 className="dados-card-title">Ações judiciais no território piloto</h3>
+              <p className="dados-card-body">
+                <strong>Baseline:</strong> dado local (a ser levantado com município)
+                <br />
+                <strong>Esperado:</strong> redução após 6 meses de cuidado coordenado
+              </p>
+            </div>
+            <div className="dados-card reveal d1">
+              <h3 className="dados-card-title">Satisfação das famílias</h3>
+              <p className="dados-card-body">
+                <strong>Baseline:</strong> não coletada
+                <br />
+                <strong>Esperado:</strong> NPS ≥ 70 ao fim do piloto
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="escalabilidade" className="section-valor">
+        <div className="wrap">
+          <div className="reveal">
+            <p className="eyebrow">Escalabilidade</p>
+            <h2 className="section-headline">Começa pequeno. Escala com evidência.</h2>
+            <p className="section-body" style={{ marginTop: "1rem", maxWidth: "46rem" }}>
+              O CADU foi desenhado para crescer sem ruptura.
+            </p>
+          </div>
+
+          <div className="modelo-grid" style={{ marginTop: "2rem" }}>
+            <div className="modelo-card reveal">
+              <div className="modelo-title">Nível 1 — Equipamento</div>
+              <ul className="modelo-list">
+                <li>1 UBS, 1 CAPS ou 1 escola. Piloto de 6 meses. Dados reais em 90 dias.</li>
+              </ul>
+            </div>
+            <div className="modelo-card reveal d1">
+              <div className="modelo-title">Nível 2 — Município</div>
+              <ul className="modelo-list">
+                <li>Expansão para toda a rede municipal. Integração com sistemas existentes.</li>
+                <li>Contratação formal baseada em resultado do piloto.</li>
+              </ul>
+            </div>
+            <div className="modelo-card reveal d2">
+              <div className="modelo-title">Nível 3 — Regional</div>
+              <ul className="modelo-list">
+                <li>Articulação intermunicipal ou estadual. Base para política pública permanente.</li>
+                <li>Financiamento via PPP, fundo estadual ou federal.</li>
+              </ul>
+            </div>
+          </div>
+
+          <p className="section-body reveal d1" style={{ marginTop: "2rem", maxWidth: "42rem", fontWeight: 700, color: "var(--black)" }}>
+            O piloto de hoje é a evidência que viabiliza a política de amanhã.
+          </p>
         </div>
       </section>
 
@@ -534,362 +798,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="modelo" className="section-valor">
-        <div className="wrap">
-          <div className="reveal">
-            <p className="eyebrow">Modelo de implementação</p>
-            <h2 className="section-headline">Estrutura progressiva e orientada por resultado</h2>
-          </div>
-
-          <div className="modelo-grid">
-            <div className="modelo-card reveal">
-              <div className="modelo-title">Fase 1 — Cooperação técnica e piloto (0–120 dias)</div>
-              <ul className="modelo-list">
-                <li>Implantação da infraestrutura</li>
-                <li>Capacitação de equipes</li>
-                <li>Acompanhamento inicial de usuários</li>
-              </ul>
-            </div>
-            <div className="modelo-card reveal d1">
-              <div className="modelo-title">Fase 2 — Consolidação (4–12 meses)</div>
-              <ul className="modelo-list">
-                <li>Expansão progressiva</li>
-                <li>Monitoramento de indicadores</li>
-                <li>Ajustes operacionais</li>
-              </ul>
-            </div>
-            <div className="modelo-card reveal d2">
-              <div className="modelo-title">Fase 3 — Escala (12+ meses)</div>
-              <ul className="modelo-list">
-                <li>Ampliação municipal</li>
-                <li>Integração regional</li>
-                <li>Base para política pública permanente</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="reveal" style={{ marginTop: "3rem" }}>
-            <p className="eyebrow">Como iniciar no município</p>
-            <ol className="piloto-ppp-steps" style={{ marginTop: "1rem" }}>
-              <li className="reveal">
-                <span className="piloto-ppp-n">1</span>
-                <div>
-                  <div className="step-title">Assinatura de termo de cooperação técnica</div>
-                  <p className="step-desc">Instrumento de início com escopo e governança definidos.</p>
-                </div>
-              </li>
-              <li className="reveal d1">
-                <span className="piloto-ppp-n">2</span>
-                <div>
-                  <div className="step-title">Definição de território ou equipamento piloto</div>
-                  <p className="step-desc">Seleção do recorte inicial e parceiros locais.</p>
-                </div>
-              </li>
-              <li className="reveal d2">
-                <span className="piloto-ppp-n">3</span>
-                <div>
-                  <div className="step-title">Capacitação das equipes locais</div>
-                  <p className="step-desc">Rotinas, perfis de acesso, consentimento e protocolo operacional.</p>
-                </div>
-              </li>
-              <li className="reveal d3">
-                <span className="piloto-ppp-n">4</span>
-                <div>
-                  <div className="step-title">Início do acompanhamento com dados estruturados</div>
-                  <p className="step-desc">Registro longitudinal ativo e coordenação entre pontos aderentes.</p>
-                </div>
-              </li>
-              <li className="reveal d3">
-                <span className="piloto-ppp-n">5</span>
-                <div>
-                  <div className="step-title">Geração de relatório técnico para decisão</div>
-                  <p className="step-desc">Base para escala, financiamento e pactuações intersetoriais.</p>
-                </div>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </section>
-
-      <section id="ppp" className="section-ppp">
-        <div className="blobs" aria-hidden="true">
-          <div className="blob ppp-blob" />
-        </div>
-        <div className="wrap">
-          <div className="reveal">
-            <p className="eyebrow">Parceria Público-Privada</p>
-            <h2 className="section-headline">Estratégia de escala e sustentabilidade</h2>
-            <p className="section-body" style={{ marginTop: "1rem" }}>
-              O modelo prevê entrada via cooperação técnica, validação por piloto com dados reais, estruturação de
-              financiamento público e implementação de parcerias público-privadas para escala. O CADU atua como camada de
-              execução digital que conecta saúde, educação, assistência e famílias, sem substituição das atribuições
-              institucionais.
-            </p>
-          </div>
-          <div className="ppp-grid">
-            <div className="ppp-card reveal">
-              <div className="ppp-card-kicker">Saúde</div>
-              <p className="ppp-card-text">UBS, CER, CAPS, hospitais e regulação.</p>
-            </div>
-            <div className="ppp-card reveal d1">
-              <div className="ppp-card-kicker">Educação</div>
-              <p className="ppp-card-text">Escolas e AEE.</p>
-            </div>
-            <div className="ppp-card reveal d2">
-              <div className="ppp-card-kicker">Assistência social</div>
-              <p className="ppp-card-text">CRAS e CadÚnico.</p>
-            </div>
-            <div className="ppp-card reveal d3">
-              <div className="ppp-card-kicker">Família</div>
-              <p className="ppp-card-text">Continuidade do cuidado.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="cuidado" className="section-arch">
-        <div className="wrap">
-          <div className="reveal">
-            <p className="eyebrow">Arquitetura de cuidado</p>
-            <h2 className="section-headline">O cuidado já existe. O problema é que ele não conversa.</h2>
-            <p className="section-body" style={{ marginTop: "1rem" }}>
-              Cada ponto de atenção detém fragmentos de informação. A infraestrutura articula a jornada em registro
-              longitudinal por criança, com vistas à continuidade clínica e a indicadores de gestão, nos limites fixados
-              em lei e no contrato de cooperação.
-            </p>
-          </div>
-
-          <div className="arch-panel reveal d1">
-            <div className="arch-chain">
-              <span className="arch-node">Família</span>
-              <span className="arch-arrow" aria-hidden="true" />
-              <span className="arch-node">Clínica / profissionais</span>
-              <span className="arch-arrow" aria-hidden="true" />
-              <span className="arch-node">Escola</span>
-            </div>
-
-            <div className="arch-hub">
-              <div className="arch-hub-title">CADU</div>
-              <p className="arch-hub-desc">Camada de dados, comunicação e acompanhamento longitudinal</p>
-            </div>
-
-            <div className="arch-chain">
-              <span className="arch-node">CER / CAPS / UBS</span>
-              <span className="arch-arrow" aria-hidden="true" />
-              <span className="arch-node">Regulação</span>
-              <span className="arch-arrow" aria-hidden="true" />
-              <span className="arch-node">Secretaria</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="dados" className="section-dados">
-        <div className="wrap">
-          <div className="dados-head reveal">
-            <p className="eyebrow">Arquitetura de dados</p>
-            <h2 className="section-headline">Dados estruturados para cuidado e gestão pública.</h2>
-            <p className="dados-hint">
-              Dados pessoais e sensíveis exigem LGPD, consentimento, controle de acesso rigoroso e anonimização para
-              indicadores de gestão.
-            </p>
-          </div>
-
-          <div className="dados-grid">
-            <div className="dados-card reveal">
-              <h3 className="dados-card-title">Dados clínicos</h3>
-              <p className="dados-card-body">Diagnóstico, terapias, evolução, comorbidades e medicação.</p>
-            </div>
-            <div className="dados-card reveal d1">
-              <h3 className="dados-card-title">Dados comportamentais</h3>
-              <p className="dados-card-body">Rotina, crises, comunicação, autonomia e marcos do desenvolvimento.</p>
-            </div>
-            <div className="dados-card reveal d2">
-              <h3 className="dados-card-title">Dados educacionais</h3>
-              <p className="dados-card-body">Escola, AEE, adaptação, interação social e demandas pedagógicas.</p>
-            </div>
-            <div className="dados-card reveal">
-              <h3 className="dados-card-title">Dados familiares e sociais</h3>
-              <p className="dados-card-body">Cuidador principal, engajamento familiar, rede de apoio e contexto de vulnerabilidade social.</p>
-            </div>
-            <div className="dados-card reveal d1">
-              <h3 className="dados-card-title">Dados administrativos</h3>
-              <p className="dados-card-body">Fila, regulação, frequência, tempo de espera e encaminhamentos.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="setor" className="section-setor">
-        <div className="wrap">
-          <div className="reveal">
-            <p className="eyebrow">Setor público</p>
-            <h2 className="section-headline">Do cuidado individual à informação para gestão.</h2>
-          </div>
-          <div className="setor-grid">
-            {[
-              "Redução de retrabalho entre profissionais",
-              "Continuidade do histórico entre serviços",
-              "Base real para gestão de filas e acesso",
-              "Apoio à regulação",
-              "Indicadores para secretarias",
-              "Monitoramento de políticas",
-            ].map((t, i) => (
-              <div key={t} className={`setor-card reveal${i > 0 ? ` d${Math.min(i, 4)}` : ""}`}>
-                {t}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="roi-publico" className="section-valor">
-        <div className="wrap">
-          <div className="reveal" style={{ maxWidth: "48rem" }}>
-            <p className="eyebrow">ROI público</p>
-            <h2 className="section-headline">O custo de não ter dados</h2>
-            <p className="section-body" style={{ marginTop: "1rem", maxWidth: "none", fontWeight: 700, color: "var(--black)" }}>
-              Uma criança com autismo sem diagnóstico precoce e cuidado coordenado gera:
-            </p>
-            <ul className="urgencia-list" style={{ marginTop: "0.75rem" }}>
-              <li>Custo judicial médio por ação de saúde: R$ 15.000–80.000 (fonte: CNJ)</li>
-              <li>Anos de atendimento fragmentado sem evolução mensurável</li>
-              <li>Pressão crescente sobre orçamentos de saúde, educação e assistência</li>
-            </ul>
-            <p className="section-body" style={{ marginTop: "1.5rem", maxWidth: "none", fontWeight: 700, color: "var(--black)" }}>
-              Com infraestrutura de dados e coordenação:
-            </p>
-            <ul className="urgencia-list" style={{ marginTop: "0.75rem" }}>
-              <li>Diagnóstico mais precoce dentro da janela de intervenção</li>
-              <li>Redução de retrabalho e duplicidade entre serviços</li>
-              <li>Base para decisão orçamentária com evidência real</li>
-            </ul>
-            <p className="section-body" style={{ marginTop: "1.25rem", maxWidth: "none", marginBottom: 0 }}>
-              O piloto gera os primeiros dados em 90 dias.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="piloto-publico" className="section-piloto-ppp">
-        <div className="blobs" aria-hidden="true">
-          <div className="blob piloto-blob" />
-        </div>
-        <div className="wrap">
-          <div className="reveal">
-            <p className="eyebrow">Piloto público</p>
-            <h2 className="section-headline">Validação em operação real</h2>
-            <p className="section-body" style={{ marginTop: "1rem", maxWidth: "44rem" }}>
-              Abrangência inicial controlada, métricas explícitas e expansão baseada em evidência.
-            </p>
-          </div>
-
-          <div className="piloto-ppp-grid">
-            <div>
-              <ol className="piloto-ppp-steps">
-                <li className="reveal">
-                  <span className="piloto-ppp-n">1</span>
-                  <div>
-                    <div className="step-title">Território e parceiros</div>
-                    <p className="step-desc">Escolha de território ou equipamento público alinhado à gestão local.</p>
-                  </div>
-                </li>
-                <li className="reveal d1">
-                  <span className="piloto-ppp-n">2</span>
-                  <div>
-                    <div className="step-title">Cadastro inicial</div>
-                    <p className="step-desc">Inclusão responsável de crianças e famílias, com consentimento e governança.</p>
-                  </div>
-                </li>
-                <li className="reveal d2">
-                  <span className="piloto-ppp-n">3</span>
-                  <div>
-                    <div className="step-title">Acompanhamento (90 dias)</div>
-                    <p className="step-desc">Coleta estruturada e coordenação entre pontos de atenção aderentes ao arranjo.</p>
-                  </div>
-                </li>
-                <li className="reveal d3">
-                  <span className="piloto-ppp-n">4</span>
-                  <div>
-                    <div className="step-title">Relatório técnico</div>
-                    <p className="step-desc">Indicadores de impacto e subsídios para decisão em saúde, educação e assistência.</p>
-                  </div>
-                </li>
-              </ol>
-            </div>
-
-            <div className="pilot-indicators reveal d2">
-              <p className="pilot-indicators-title">Indicadores</p>
-              <ul className="pilot-indicators-list">
-                <li>Tempo até o primeiro atendimento</li>
-                <li>Adesão familiar</li>
-                <li>Coordenação entre profissionais</li>
-                <li>Redução de duplicidade</li>
-                <li>Evolução do desenvolvimento</li>
-                <li>Satisfação das famílias</li>
-                <li>Dados para gestão pública</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="financiamento" className="section-valor">
-        <div className="wrap">
-          <div className="reveal">
-            <p className="eyebrow">Viabilização e financiamento</p>
-            <h2 className="section-headline">Estrutura de sustentabilidade progressiva</h2>
-          </div>
-          <div className="valor-grid" style={{ marginTop: "2.25rem" }}>
-            <div className="valor-card reveal" style={{ textAlign: "left" }}>
-              <div style={{ fontWeight: 800, color: "var(--black)", marginBottom: "0.65rem" }}>
-                Emendas parlamentares (individual, de comissão ou de bancada)
-              </div>
-              <p style={{ margin: 0, fontSize: "max(0.95rem, var(--text-min))", lineHeight: 1.65, color: "var(--text-2)" }}>
-                → instrumento via convênio ou termo de fomento com o município
-                <br />
-                → valor estimado por piloto: R$ 80.000–150.000
-                <br />→ escopo, proposta técnica e documentação: estruturados pelo CADU
-              </p>
-            </div>
-            {[
-              "Recursos do SUS, educação e assistência",
-              "Contratação institucional baseada em resultado",
-              "Parcerias público-privadas para escala",
-            ].map((t, i) => (
-              <div key={t} className={`valor-card reveal${i > 0 ? ` d${Math.min(i + 1, 3)}` : " d1"}`}>
-                {t}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="equipamentos" className="section-equip">
-        <div className="wrap">
-          <div className="reveal">
-            <p className="eyebrow">Portas de entrada</p>
-            <h2 className="section-headline">Possíveis pontos de conexão com a infraestrutura.</h2>
-          </div>
-          <div className="equip-grid">
-            {[
-              "CER",
-              "CAPS / CAPSi",
-              "UBS",
-              "Hospitais",
-              "Centros TEA",
-              "Escolas públicas / AEE",
-              "CRAS / assistência social",
-              "Centrais de regulação",
-            ].map((label, i) => (
-              <div key={label} className={`equip-card reveal${i > 0 ? ` d${Math.min(i, 3)}` : ""}`}>
-                {label}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section id="legislacao">
         <div className="blobs">
           <div className="blob legislacao-blob" />
@@ -905,6 +813,11 @@ export default function Home() {
               do poder público.
             </p>
             <p className="section-body reveal d1" style={{ marginTop: "1.35rem", maxWidth: "52rem", lineHeight: 1.75 }}>
+              O CADU foi desenvolvido e validado na Clínica Casa do Urso (São Paulo), primeiro núcleo operacional com dados
+              estruturados e longitudinais reais — ambiente controlado que serviu de base para o modelo de implementação
+              pública.
+            </p>
+            <p className="section-body reveal d1" style={{ marginTop: "1.25rem", maxWidth: "52rem", lineHeight: 1.75 }}>
               A Dep. Renata Abreu (Podemos) é referência nacional na pauta de autismo e neurodesenvolvimento no Congresso.
               Os projetos abaixo têm o CADU como infraestrutura natural de execução e monitoramento.
             </p>
@@ -962,10 +875,75 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="roi-publico" className="section-valor">
+        <div className="wrap">
+          <div className="reveal" style={{ maxWidth: "48rem" }}>
+            <p className="eyebrow">ROI público</p>
+            <h2 className="section-headline">O custo de não ter dados</h2>
+            <p className="section-body" style={{ marginTop: "1rem", maxWidth: "none", fontWeight: 700, color: "var(--black)" }}>
+              Uma criança com autismo sem diagnóstico precoce e cuidado coordenado gera:
+            </p>
+            <ul className="urgencia-list" style={{ marginTop: "0.75rem" }}>
+              <li>Custo judicial médio por ação de saúde: R$ 15.000–80.000 (fonte: CNJ)</li>
+              <li>Anos de atendimento fragmentado sem evolução mensurável</li>
+              <li>Pressão crescente sobre orçamentos de saúde, educação e assistência</li>
+            </ul>
+            <p className="section-body" style={{ marginTop: "1.5rem", maxWidth: "none", fontWeight: 700, color: "var(--black)" }}>
+              Com infraestrutura de dados e coordenação:
+            </p>
+            <ul className="urgencia-list" style={{ marginTop: "0.75rem" }}>
+              <li>Diagnóstico mais precoce dentro da janela de intervenção</li>
+              <li>Redução de retrabalho e duplicidade entre serviços</li>
+              <li>Base para decisão orçamentária com evidência real</li>
+            </ul>
+            <p className="section-body" style={{ marginTop: "1.25rem", maxWidth: "none", marginBottom: 0 }}>
+              O piloto gera os primeiros dados em 90 dias.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cuidado" className="section-arch">
+        <div className="wrap">
+          <div className="reveal">
+            <p className="eyebrow">Arquitetura de cuidado</p>
+            <h2 className="section-headline">O cuidado já existe. O problema é que ele não conversa.</h2>
+            <p className="section-body" style={{ marginTop: "1rem" }}>
+              Cada ponto de atenção detém fragmentos de informação. A infraestrutura articula a jornada em registro
+              longitudinal por criança, com vistas à continuidade clínica e a indicadores de gestão, nos limites fixados
+              em lei e no contrato de cooperação.
+            </p>
+          </div>
+
+          <div className="arch-panel reveal d1">
+            <div className="arch-chain">
+              <span className="arch-node">Família</span>
+              <span className="arch-arrow" aria-hidden="true" />
+              <span className="arch-node">Clínica / profissionais</span>
+              <span className="arch-arrow" aria-hidden="true" />
+              <span className="arch-node">Escola</span>
+            </div>
+
+            <div className="arch-hub">
+              <div className="arch-hub-title">CADU</div>
+              <p className="arch-hub-desc">Camada de dados, comunicação e acompanhamento longitudinal</p>
+            </div>
+
+            <div className="arch-chain">
+              <span className="arch-node">CER / CAPS / UBS</span>
+              <span className="arch-arrow" aria-hidden="true" />
+              <span className="arch-node">Regulação</span>
+              <span className="arch-arrow" aria-hidden="true" />
+              <span className="arch-node">Secretaria</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="governanca" className="section-gov">
         <div className="wrap">
           <div className="reveal">
-            <p className="eyebrow">LGPD e segurança</p>
+            <p className="eyebrow">LGPD e governança</p>
             <h2 className="section-headline">Dados sensíveis exigem governança rigorosa.</h2>
           </div>
           <div className="gov-grid">
@@ -986,36 +964,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="valor" className="section-valor">
-        <div className="wrap">
-          <div className="reveal">
-            <p className="eyebrow">Para o município</p>
-            <h2 className="section-headline">Por que implementar</h2>
-          </div>
-          <div className="valor-grid">
-            {[
-              "Melhoria da jornada das famílias",
-              "Visibilidade de gargalos",
-              "Base quantitativa para decisão",
-              "Redução de desperdício",
-              "Aumento de eficiência",
-              "Fortalecimento de políticas públicas",
-            ].map((t, i) => (
-              <div key={t} className={`valor-card reveal${i > 0 ? ` d${Math.min(i, 3)}` : ""}`}>
-                {t}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section id="proximo" className="section-proximo">
         <div className="blobs" aria-hidden="true">
           <div className="blob cta-blob" />
         </div>
 
         <div className="wrap" style={{ textAlign: "center" }}>
-          <p className="cta-eyebrow reveal">Coordenação técnica</p>
+          <p className="cta-eyebrow reveal">Contato</p>
 
           <h2 className="cta-headline reveal d1">
             O CADU não é um sistema.
