@@ -24,6 +24,9 @@ export default function Home() {
             <a href="#execucao">Execução</a>
           </li>
           <li>
+            <a href="#parlamentares">Gabinetes</a>
+          </li>
+          <li>
             <a href="#modelo">Modelo</a>
           </li>
           <li>
@@ -31,6 +34,9 @@ export default function Home() {
           </li>
           <li>
             <a href="#legislacao">Leis</a>
+          </li>
+          <li>
+            <a href="#roi-publico">Impacto fiscal</a>
           </li>
           <li>
             <a href="#piloto-publico">Piloto</a>
@@ -91,13 +97,28 @@ export default function Home() {
                 gestão.
               </p>
 
-              <p className="hero-body reveal d2" style={{ marginTop: "1rem" }}>
+              <p className="hero-body reveal d2" style={{ marginTop: "1rem", marginBottom: "1.25rem" }}>
                 O programa de cuidado integrado é viabilizado por uma camada de infraestrutura digital interoperável
                 (CADU), com registro longitudinal, coordenação entre pontos de atenção e governança de dados conforme
                 legislação e gestão local.
               </p>
 
-              <div className="hero-btns reveal d3">
+              <p
+                className="reveal d2"
+                style={{
+                  fontSize: "clamp(1.05rem, 2vw, 1.35rem)",
+                  fontWeight: 800,
+                  letterSpacing: "-0.02em",
+                  lineHeight: 1.35,
+                  color: "var(--black)",
+                  maxWidth: "42rem",
+                  marginBottom: "1.75rem",
+                }}
+              >
+                Um piloto iniciado hoje gera relatório técnico de impacto antes de outubro de 2026.
+              </p>
+
+              <div className="hero-btns reveal d3" style={{ flexWrap: "wrap", rowGap: "10px" }}>
                 <a href="mailto:contato@cadu.health?subject=Agendar%20reuni%C3%A3o%20t%C3%A9cnica%20-%20CADU%20PPP" className="btn-red">
                   Agendar reunião técnica
                   <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -112,6 +133,12 @@ export default function Home() {
                   className="btn-ghost"
                 >
                   Apresentação institucional
+                </a>
+                <a
+                  href="mailto:contato@cadu.health?subject=Apresenta%C3%A7%C3%A3o%20CADU%20-%20gabinete%20parlamentar"
+                  className="btn-ghost"
+                >
+                  Apresentação para gabinete parlamentar
                 </a>
               </div>
 
@@ -129,10 +156,13 @@ export default function Home() {
                   <span className="stat-label">tempo médio para diagnóstico no SUS</span>
                 </div>
                 <div>
-                  <span className="stat-num">
-                    60<sup>%</sup>
+                  <span className="stat-num" style={{ fontSize: "clamp(1.85rem, 3vw, 2.65rem)", letterSpacing: "-0.03em" }}>
+                    ≤2/3
                   </span>
-                  <span className="stat-label">redução de custo com intervenção precoce efetiva</span>
+                  <span className="stat-label">
+                    redução de custo com diagnóstico e intervenção precoce coordenada (referência: OMS e estudos
+                    comparativos de custo em TEA)
+                  </span>
                 </div>
               </div>
             </div>
@@ -313,7 +343,10 @@ export default function Home() {
               É falta de execução.
             </h2>
             <ul className="urgencia-list">
-              <li>Judicialização crescente em autismo e neurodesenvolvimento</li>
+              <li>
+                Judicialização crescente: o Brasil registra crescimento contínuo de ações judiciais para acesso a terapias
+                e diagnóstico em autismo — custo fiscal e político direto para estados e municípios.
+              </li>
               <li>Interrupção do cuidado entre serviços</li>
               <li>Atendimento fragmentado por silos</li>
               <li>Ausência de histórico longitudinal</li>
@@ -450,6 +483,53 @@ export default function Home() {
                 {t}
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="parlamentares" className="section-setor">
+        <div className="wrap">
+          <div className="reveal" style={{ maxWidth: "48rem" }}>
+            <p className="eyebrow">Para parlamentares</p>
+            <h2 className="section-headline">Para gabinetes com pauta em neurodesenvolvimento</h2>
+            <p className="section-body" style={{ marginTop: "1rem", maxWidth: "none" }}>
+              Se seu gabinete tem pauta em autismo ou neurodesenvolvimento, o CADU pode ser o instrumento de execução das
+              políticas que você já defende.
+            </p>
+            <p className="section-body" style={{ marginTop: "1rem", maxWidth: "none" }}>
+              Um piloto municipal estruturado gera:
+            </p>
+            <ul className="urgencia-list" style={{ marginTop: "0.75rem" }}>
+              <li>Relatório técnico de impacto com dados reais</li>
+              <li>Entregável concreto antes do fim da legislatura</li>
+              <li>Base para escala e política pública permanente</li>
+            </ul>
+            <p className="section-body" style={{ marginTop: "1.5rem", maxWidth: "none", fontWeight: 700, color: "var(--black)" }}>
+              Como viabilizar com emenda parlamentar:
+            </p>
+            <p className="section-body" style={{ marginTop: "0.65rem", maxWidth: "none" }}>
+              O piloto pode ser financiado via emenda parlamentar individual, de comissão ou de bancada, por meio de
+              convênio ou termo de fomento com o município parceiro.
+            </p>
+            <p className="section-body" style={{ marginTop: "1rem", maxWidth: "none" }}>
+              <strong style={{ color: "var(--black)" }}>Valor estimado para piloto inicial (90–120 dias, um município):</strong>{" "}
+              entre R$ 80.000 e R$ 150.000 dependendo do porte e da rede envolvida.
+            </p>
+            <p className="section-body" style={{ marginTop: "1rem", maxWidth: "none" }}>
+              Sua equipe não precisa estruturar nada. Preparamos a proposta técnica, o escopo do piloto e os instrumentos
+              jurídicos necessários.
+            </p>
+            <div style={{ marginTop: "1.75rem" }}>
+              <a
+                href="mailto:contato@cadu.health?subject=Apresenta%C3%A7%C3%A3o%20CADU%20-%20gabinete%20parlamentar"
+                className="btn-red"
+              >
+                Solicitar apresentação para gabinete
+                <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -663,6 +743,34 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="roi-publico" className="section-valor">
+        <div className="wrap">
+          <div className="reveal" style={{ maxWidth: "48rem" }}>
+            <p className="eyebrow">ROI público</p>
+            <h2 className="section-headline">O custo de não ter dados</h2>
+            <p className="section-body" style={{ marginTop: "1rem", maxWidth: "none", fontWeight: 700, color: "var(--black)" }}>
+              Uma criança com autismo sem diagnóstico precoce e cuidado coordenado gera:
+            </p>
+            <ul className="urgencia-list" style={{ marginTop: "0.75rem" }}>
+              <li>Custo judicial médio por ação de saúde: R$ 15.000–80.000 (fonte: CNJ)</li>
+              <li>Anos de atendimento fragmentado sem evolução mensurável</li>
+              <li>Pressão crescente sobre orçamentos de saúde, educação e assistência</li>
+            </ul>
+            <p className="section-body" style={{ marginTop: "1.5rem", maxWidth: "none", fontWeight: 700, color: "var(--black)" }}>
+              Com infraestrutura de dados e coordenação:
+            </p>
+            <ul className="urgencia-list" style={{ marginTop: "0.75rem" }}>
+              <li>Diagnóstico mais precoce dentro da janela de intervenção</li>
+              <li>Redução de retrabalho e duplicidade entre serviços</li>
+              <li>Base para decisão orçamentária com evidência real</li>
+            </ul>
+            <p className="section-body" style={{ marginTop: "1.25rem", maxWidth: "none", marginBottom: 0 }}>
+              O piloto gera os primeiros dados em 90 dias.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="piloto-publico" className="section-piloto-ppp">
         <div className="blobs" aria-hidden="true">
           <div className="blob piloto-blob" />
@@ -733,13 +841,23 @@ export default function Home() {
             <h2 className="section-headline">Estrutura de sustentabilidade progressiva</h2>
           </div>
           <div className="valor-grid" style={{ marginTop: "2.25rem" }}>
+            <div className="valor-card reveal" style={{ textAlign: "left" }}>
+              <div style={{ fontWeight: 800, color: "var(--black)", marginBottom: "0.65rem" }}>
+                Emendas parlamentares (individual, de comissão ou de bancada)
+              </div>
+              <p style={{ margin: 0, fontSize: "max(0.95rem, var(--text-min))", lineHeight: 1.65, color: "var(--text-2)" }}>
+                → instrumento via convênio ou termo de fomento com o município
+                <br />
+                → valor estimado por piloto: R$ 80.000–150.000
+                <br />→ escopo, proposta técnica e documentação: estruturados pelo CADU
+              </p>
+            </div>
             {[
-              "Emendas parlamentares para pilotos",
               "Recursos do SUS, educação e assistência",
               "Contratação institucional baseada em resultado",
               "Parcerias público-privadas para escala",
             ].map((t, i) => (
-              <div key={t} className={`valor-card reveal${i > 0 ? ` d${Math.min(i, 3)}` : ""}`}>
+              <div key={t} className={`valor-card reveal${i > 0 ? ` d${Math.min(i + 1, 3)}` : " d1"}`}>
                 {t}
               </div>
             ))}
@@ -785,6 +903,10 @@ export default function Home() {
               O programa opera em convergência com legislações de autismo, inclusão, educação e cuidado humanizado,
               viabilizando execução, monitoramento e avaliação de políticas públicas, sem substituição das competências
               do poder público.
+            </p>
+            <p className="section-body reveal d1" style={{ marginTop: "1.35rem", maxWidth: "52rem", lineHeight: 1.75 }}>
+              A Dep. Renata Abreu (Podemos) é referência nacional na pauta de autismo e neurodesenvolvimento no Congresso.
+              Os projetos abaixo têm o CADU como infraestrutura natural de execução e monitoramento.
             </p>
           </div>
 
@@ -905,7 +1027,7 @@ export default function Home() {
             Pronto para estruturar pilotos municipais com base técnica, governança de dados e indicadores de impacto.
           </p>
 
-          <div className="cta-btns reveal d3" style={{ flexWrap: "wrap", justifyContent: "center" }}>
+          <div className="cta-btns reveal d3" style={{ flexWrap: "wrap", justifyContent: "center", rowGap: "10px" }}>
             <a href="mailto:contato@cadu.health?subject=Agendar%20reuni%C3%A3o%20t%C3%A9cnica%20-%20CADU%20PPP" className="btn-white">
               Agendar reunião técnica
               <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -920,6 +1042,12 @@ export default function Home() {
               className="btn-outline"
             >
               Apresentação institucional
+            </a>
+            <a
+              href="mailto:contato@cadu.health?subject=Apresenta%C3%A7%C3%A3o%20CADU%20-%20gabinete%20parlamentar"
+              className="btn-outline"
+            >
+              Apresentação para gabinete parlamentar
             </a>
           </div>
         </div>
